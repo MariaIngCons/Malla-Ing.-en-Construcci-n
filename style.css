@@ -1,1 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#malla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nivel {
+  border: 2px solid #333;
+  padding: 10px;
+  width: 280px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nivel h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.ramo {
+  background-color: pink;
+  padding: 8px;
+  margin: 5px 0;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.ramo:hover {
+  filter: brightness(0.95);
+}
+
+.ramo.aprobado {
+  background-color: purple;
+  color: white;
+  text-decoration: line-through;
+}
+
+.ramo.bloqueado {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
 
